@@ -208,7 +208,7 @@ a{
     height: 22vw;
     /* background: white; */
     border-radius: 50%;
-    /* margin-left: 250px; */
+    margin-left: 250px;
     padding: 3px;
     overflow: hidden;
 }
@@ -216,8 +216,8 @@ a{
 .home_img .img_box::before,
 .home_img .img_box::after {
     content: "";
-    width: 280px;
-    height: 280px;
+    width: 285px;
+    height: 285px;
     position: absolute;
     background: conic-gradient(transparent, transparent, transparent, rgb(62, 243, 62));
     transform: rotate(0deg);
@@ -228,6 +228,9 @@ a{
     100% {
         transform: rotate(360deg);
     }
+}
+.home_img .img_box::after {
+    animation-delay: -7.5s;
 }
 
 .home_img .img_box .img_item{
